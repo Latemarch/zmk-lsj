@@ -80,3 +80,8 @@ endif # ZMK_BACKLIGHT
     };
 };
 
+/ {
+    chosen {
+        zmk,backlight = &backlight;
+    };
+};
