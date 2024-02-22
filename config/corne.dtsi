@@ -58,7 +58,11 @@ RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)  RC(2,6) RC(2,7) RC(2,8) RC(2,9) RC(2,10
             ;
 
     };
-    &pwm0 {
+       
+    // TODO: per-key RGB node(s)?
+};
+
+&pwm0 {
         status = "okay";
         pinctrl-0 = <&pwm0_default>;
         pinctrl-1 = <&pwm0_sleep>;
@@ -77,9 +81,6 @@ RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)  RC(2,6) RC(2,7) RC(2,8) RC(2,9) RC(2,10
         zmk,backlight = &backlight;
           };
       };
-   
-    // TODO: per-key RGB node(s)?
-};
 
 &pro_micro_i2c {
     status = "okay";
