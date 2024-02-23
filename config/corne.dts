@@ -1,3 +1,5 @@
+CONFIG_PINCTRL=y
+
 &pwm0 {
     status = "okay";
     pinctrl-0 = <&pwm0_default>;
