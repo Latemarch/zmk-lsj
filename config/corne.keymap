@@ -70,10 +70,10 @@
             //                    |     |     |    |                  |     |     |     |
 
             bindings = <
-&trans      &kp UP        &trans        &kp INSERT    &kp C_AC_HOME  &kp PAGE_UP      &kp PRINTSCREEN    &kp SCROLLLOCK   &kp C_PAUSE       &kp K_SLEEP        &kp K_LOCK                        &kp K_COFFEE
-&kp LEFT    &kp DOWN      &kp RIGHT     &kp DEL       &kp END        &kp PAGE_DOWN    &kp C_PREV         &kp C_NEXT       &kp C_PP          &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                   &kp K_MUTE
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4     &rgb_ug RGB_TOG    &rgb_ug RGB_EFF  &rgb_ug RGB_BRI   &rgb_ug RGB_BRD    &rgb_ug RGB_COLOR_HSB(241,88,46)  &rgb_ug RGB_SPI
-                                        &mkp LCLK     &trans         &mkp RCLK        &ext_power EP_OFF  &trans           &ext_power EP_ON
+&trans      &kp UP        &trans        &kp INSERT    &kp HOME      &kp PAGE_UP      &kp PRINTSCREEN    &kp SCROLLLOCK   &kp C_PAUSE       &trans             &trans                            &trans
+&kp LEFT    &kp DOWN      &kp RIGHT     &kp DEL       &kp END       &kp PAGE_DOWN    &kp C_PREV         &kp C_NEXT       &kp C_PP          &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                   &kp K_MUTE
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4     &rgb_ug RGB_TOG    &rgb_ug RGB_EFF  &rgb_ug RGB_BRI   &rgb_ug RGB_BRD    &rgb_ug RGB_COLOR_HSB(241,88,46)  &rgb_ug RGB_SPI
+                                        &mkp LCLK     &trans        &mkp RCLK        &ext_power EP_OFF  &trans           &ext_power EP_ON
             >;
         };
     };
