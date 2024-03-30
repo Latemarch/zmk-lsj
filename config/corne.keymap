@@ -58,7 +58,7 @@
 &kp F1     &kp F2      &kp F3   &kp F4            &kp F5             &kp F6          &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp SLASH     &kp ASTERISK  &kp MINUS
 &kp F7     &kp F8      &kp F9   &kp F10           &kp F11            &kp F12         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6   &kp GRAVE     &kp PLUS      &kp ENTER
 &kp LSHFT  &kp C_MENU  &kp TAB  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BSLH        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_0  &kp DOT       &kp RSHFT
-                                &kp LCTRL         &trans             &kp LEFT_ALT    &kp RCTRL     &trans        &kt RIGHT_ALT
+                                &kp LCTRL         &trans             &kp LEFT_ALT    &kp RCTRL     &kp EQUAL     &kt RIGHT_ALT
             >;
         };
 
