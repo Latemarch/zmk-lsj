@@ -58,7 +58,7 @@
 &trans  &kp F1   &kp F2   &kp F3            &kp F4             &kp F5       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp SLASH     &kp ASTERISK     &trans
 &trans  &kp F6   &kp F7   &kp F8            &kp F9             &kp F10      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6   &kp MINUS     &kp PLUS         &trans
 &trans  &kp F11  &kp F12  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BSLH     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_0  &kp RIGHT_SHIFT  &trans
-                          &kp LCTRL         &trans             &kp ENTER    &kp RCTRL     &kp EQUAL     &kt RIGHT_ALT
+                          &kp LCTRL         &trans             &kp ENTER    &kp RCTRL     &kp EQUAL     &kp RIGHT_ALT
             >;
         };
 
