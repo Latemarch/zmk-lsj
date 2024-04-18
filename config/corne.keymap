@@ -55,7 +55,7 @@
             //                     | GUI |     | ALT/ENT |   | BKSP | HYPER/SPACE |    |
 
             bindings = <
-&trans  &kp F1   &kp F2   &kp F3            &kp F4             &kp F5       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp SLASH     &kp ASTERISK     &trans
+&trans  &kp F1   &kp F2   &kp F3            &kp F4             &kp F5       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp SLASH     &kp STAR         &trans
 &trans  &kp F6   &kp F7   &kp F8            &kp F9             &kp F10      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6   &kp MINUS     &kp PLUS         &trans
 &trans  &kp F11  &kp F12  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BSLH     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_0  &kp RIGHT_SHIFT  &trans
                           &kp LCTRL         &trans             &kp ENTER    &kp RCTRL     &kp EQUAL     &kp RIGHT_ALT
@@ -70,10 +70,10 @@
             //                    |     |     |    |                  |     |     |     |
 
             bindings = <
-&trans  &kt ESC       &kp UP        &kp INSERT    &kp HOME      &kp PAGE_UP      &kp PRINTSCREEN  &kp SCROLLLOCK   &kp C_PAUSE       &kt K_MUTE         &kp SLASH                         &trans
+&trans  &kp ESCAPE    &kp UP        &kp INSERT    &kp HOME      &kp PAGE_UP      &kp PRINTSCREEN  &kp SCROLLLOCK   &kp C_PAUSE       &kp C_MUTE         &kp GRAVE                         &trans
 &trans  &kp LEFT      &kp DOWN      &kp RIGHT     &kp END       &kp PAGE_DOWN    &kp C_PREV       &kp C_NEXT       &kp C_PP          &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                   &trans
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR       &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_BRI   &rgb_ug RGB_BRD    &rgb_ug RGB_COLOR_HSB(241,88,46)  &trans
-                                    &kt SQT       &kt GRAVE     &kt CLCK         &soft_off        &trans           &ext_power EP_ON
+                                    &kp SQT       &trans        &kt CLCK         &soft_off        &trans           &ext_power EP_ON
             >;
         };
     };
