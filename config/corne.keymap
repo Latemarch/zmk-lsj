@@ -76,11 +76,6 @@
             bindings = <&kp TAB>;
             key-positions = <25 26>;
         };
-
-        dev_tool {
-            bindings = <&dev_tool>;
-            key-positions = <6 7>;
-        };
     };
 
     macros {
@@ -103,10 +98,10 @@
             //                    | GUI | RSE | ALT/ENT |   | BKSP | HYPER/SPC  | LWR |
 
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E     &kp R        &kp T        &kp Y            &kp U        &kp I      &kp O    &kp P          &kp DELETE
-&kp CAPSLOCK      &kp A  &kp S  &kp D     &kp F        &kp G        &kp H            &kp J        &kp K      &kp L    &kp BACKSPACE  &kp ENTER
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C     &kp V        &kp B        &kp N            &kp M        &kp COMMA  &kp DOT  &kp SLASH      &kp LEFT_ALT
-                                &kp LGUI  &lt 3 GRAVE  &kp SPACE    &kp RIGHT_SHIFT  &lt 1 GRAVE  &kp F18
+&kp TAB     &kp Q  &kp W  &kp E     &kp R        &kp T        &kp Y            &kp U        &kp I         &kp O    &kp P          &kp DELETE
+&kp ESCAPE  &kp A  &kp S  &kp D     &kp F        &kp G        &kp H            &kp J        &kp K         &kp L    &kp BACKSPACE  &kp ENTER
+&kp LCTRL   &kp Z  &kp X  &kp C     &kp V        &kp B        &kp N            &kp M        &kp COMMA     &kp DOT  &kp SLASH      &kp LEFT_ALT
+                          &kp LGUI  &lt 3 GRAVE  &kp SPACE    &kp RIGHT_SHIFT  &lt 1 GRAVE  &kp CAPSLOCK
             >;
         };
 
