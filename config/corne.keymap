@@ -86,6 +86,21 @@
             bindings = <&dollor>;
             key-positions = <3 4>;
         };
+
+        leftWindow {
+            bindings = <&leftWindow>;
+            key-positions = <18 17>;
+        };
+
+        controllPannel {
+            bindings = <&controlPannel>;
+            key-positions = <5 6>;
+        };
+
+        rightWindow {
+            bindings = <&rightWindow>;
+            key-positions = <29 30>;
+        };
     };
 
     macros {
@@ -109,6 +124,39 @@
                 <&kp DOLLAR &kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT_ARROW>;
 
             label = "DOLLOR";
+        };
+
+        leftWindow: leftWindow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL &kp LEFT_ARROW>,
+                <&macro_release>;
+
+            label = "LEFTWINDOW";
+        };
+
+        rightWindow: rightWindow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL &kp RIGHT_ARROW>,
+                <&macro_release>;
+
+            label = "RIGHTWINDOW";
+        };
+
+        controlPannel: controlPannel {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL &kp UP_ARROW>,
+                <&macro_release>;
+
+            label = "CONTROLPANNEL";
         };
     };
 
