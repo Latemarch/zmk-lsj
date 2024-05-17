@@ -103,22 +103,22 @@
         };
 
         window2-3 {
-            bindings = <&kp LA(LC(E))>;
+            bindings = <&window23>;
             key-positions = <25 3>;
         };
 
         window1-3 {
-            bindings = <&kp LA(LC(D))>;
+            bindings = <&window13>;
             key-positions = <25 15>;
         };
 
         windowLeftHalf {
-            bindings = <&kp LA(LC(H))>;
+            bindings = <&windowLeftHalf>;
             key-positions = <25 18>;
         };
 
         windowRightHalf {
-            bindings = <&kp LA(LC(L))>;
+            bindings = <&windowRightHalf>;
             key-positions = <25 21>;
         };
     };
@@ -180,6 +180,50 @@
                 <&kp LEFT_CONTROL &kp UP_ARROW>;
 
             label = "CONTROLPANNEL";
+        };
+
+        windowLeftHalf: windowLeftHalf {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT &kp LEFT_CONTROL &kp LEFT_ARROW>,
+                <&macro_release>;
+
+            label = "WINDOWLEFTHALF";
+        };
+
+        windowRightHalf: windowRightHalf {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT &kp LEFT_CONTROL &kp RIGHT>,
+                <&macro_release>;
+
+            label = "WINDOWRIGHTHALF";
+        };
+
+        window23: window32 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT &kp LEFT_CONTROL &kp E>,
+                <&macro_release>;
+
+            label = "WINDOW32";
+        };
+
+        window13: window13 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT &kp LEFT_CONTROL &kp D>,
+                <&macro_release>;
+
+            label = "WINDOW13";
         };
     };
 
