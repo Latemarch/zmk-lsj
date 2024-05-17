@@ -44,22 +44,17 @@
 
         backtic {
             bindings = <&kp GRAVE>;
-            key-positions = <4 7>;
+            key-positions = <7 8>;
         };
 
         double_queto {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <16 19>;
+            key-positions = <19 20>;
         };
 
         apostrophe {
             bindings = <&kp SQT>;
-            key-positions = <28 31>;
-        };
-
-        left_prenthesis {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <5 6>;
+            key-positions = <31 32>;
         };
 
         enter {
@@ -81,13 +76,18 @@
             bindings = <&dev_tool>;
             key-positions = <7 6>;
         };
+
+        semiColone {
+            bindings = <&kp SEMICOLON>;
+            key-positions = <34 33>;
+        };
     };
 
     macros {
         dev_tool: dev_tool {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LEFT_COMMAND &kp LEFT_ALT &kp I>;
+            bindings = <&macro_tap>, <&kp LEFT_COMMAND &kp LEFT_ALT &kp I>;
 
             label = "DEV_TOOL";
         };
