@@ -89,7 +89,7 @@
 
         leftWindow {
             bindings = <&leftWindow>;
-            key-positions = <18 17>;
+            key-positions = <3 4 2>;
         };
 
         controllPannel {
@@ -99,7 +99,7 @@
 
         rightWindow {
             bindings = <&rightWindow>;
-            key-positions = <29 30>;
+            key-positions = <7 8 9>;
         };
     };
 
@@ -132,7 +132,8 @@
             bindings =
                 <&macro_press>,
                 <&kp LEFT_CONTROL &kp LEFT_ARROW>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LEFT_CONTROL &kp LEFT_ARROW>;
 
             label = "LEFTWINDOW";
         };
@@ -143,7 +144,8 @@
             bindings =
                 <&macro_press>,
                 <&kp LEFT_CONTROL &kp RIGHT_ARROW>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LEFT_CONTROL &kp RIGHT_ARROW>;
 
             label = "RIGHTWINDOW";
         };
@@ -154,7 +156,8 @@
             bindings =
                 <&macro_press>,
                 <&kp LEFT_CONTROL &kp UP_ARROW>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LEFT_CONTROL &kp UP_ARROW>;
 
             label = "CONTROLPANNEL";
         };
