@@ -188,7 +188,8 @@
             bindings =
                 <&macro_press>,
                 <&kp LEFT_ALT &kp LEFT_CONTROL &kp LEFT_ARROW>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LEFT_ALT &kp LEFT_CONTROL &kp LEFT_ARROW>;
 
             label = "WINDOWLEFTHALF";
         };
@@ -199,20 +200,10 @@
             bindings =
                 <&macro_press>,
                 <&kp LEFT_ALT &kp LEFT_CONTROL &kp RIGHT>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LEFT_ALT &kp LEFT_CONTROL &kp RIGHT>;
 
             label = "WINDOWRIGHTHALF";
-        };
-
-        window23: window32 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT &kp LEFT_CONTROL &kp E>,
-                <&macro_release>;
-
-            label = "WINDOW32";
         };
 
         window13: window13 {
@@ -221,9 +212,22 @@
             bindings =
                 <&macro_press>,
                 <&kp LEFT_ALT &kp LEFT_CONTROL &kp D>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LEFT_ALT &kp LEFT_CONTROL &kp D>;
 
             label = "WINDOW13";
+        };
+
+        window23: window23 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT &kp LEFT_CONTROL &kp E>,
+                <&macro_release>,
+                <&kp LEFT_ALT &kp LEFT_CONTROL &kp E>;
+
+            label = "WINDOW23";
         };
     };
 
