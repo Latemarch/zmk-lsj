@@ -187,9 +187,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_ALT &kp LEFT_CONTROL &kp LEFT_ARROW>,
+                <&kp LEFT_ALT &kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp LEFT_ARROW>,
                 <&macro_release>,
-                <&kp LEFT_ALT &kp LEFT_CONTROL &kp LEFT_ARROW>;
+                <&kp LEFT_ALT &kp LEFT_CONTROL>;
 
             label = "WINDOWLEFTHALF";
         };
@@ -199,9 +201,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_ALT &kp LEFT_CONTROL &kp RIGHT>,
+                <&kp LEFT_ALT &kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp RIGHT>,
                 <&macro_release>,
-                <&kp LEFT_ALT &kp LEFT_CONTROL &kp RIGHT>;
+                <&kp LEFT_ALT &kp LEFT_CONTROL>;
 
             label = "WINDOWRIGHTHALF";
         };
@@ -211,9 +215,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_ALT &kp LEFT_CONTROL &kp D>,
+                <&kp LEFT_ALT &kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp D>,
                 <&macro_release>,
-                <&kp LEFT_ALT &kp LEFT_CONTROL &kp D>;
+                <&kp LEFT_ALT &kp LEFT_CONTROL>;
 
             label = "WINDOW13";
         };
@@ -223,9 +229,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_ALT &kp LEFT_CONTROL &kp E>,
+                <&kp LEFT_ALT &kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp E>,
                 <&macro_release>,
-                <&kp LEFT_ALT &kp LEFT_CONTROL &kp E>;
+                <&kp LEFT_ALT &kp LEFT_CONTROL>;
 
             label = "WINDOW23";
         };
