@@ -249,19 +249,19 @@
             //                    | GUI | RSE | ALT/ENT |   | BKSP | HYPER/SPC  | LWR |
 
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E                   &kp R              &kp T                     &kp Y               &kp U        &kp I         &kp O    &kp P          &kp NON_US_BACKSLASH
-&kp ESCAPE      &kp A  &kp S  &kp D                   &kp F              &kp G                     &kp H               &kp J        &kp K         &kp L    &kp BACKSPACE  &kp ENTER
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C                   &kp V              &kp B                     &kp N               &kp M        &kp COMMA     &kp DOT  &kp SLASH      &kp RIGHT_SHIFT
-                              &mt LEFT_GUI AMPERSAND  &lt 1 EXCLAMATION  &mt LEFT_CONTROL SPACE    &mt LEFT_ALT SPACE  &lt 2 EQUAL  &kp CAPSLOCK
+&kp TAB           &kp Q  &kp W  &kp E                   &kp R              &kp T        &kp Y           &kp U        &kp I         &kp O    &kp P          &kp BACKSLASH
+&kp ESCAPE        &kp A  &kp S  &kp D                   &kp F              &kp G        &kp H           &kp J        &kp K         &kp L    &kp BACKSPACE  &kp ENTER
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C                   &kp V              &kp B        &kp N           &kp M        &kp COMMA     &kp DOT  &kp SLASH      &kp LEFT_ALT
+                                &mt LEFT_GUI AMPERSAND  &lt 1 EXCLAMATION  &kp SPACE    &kp LEFT_SHIFT  &lt 2 EQUAL  &kp CAPSLOCK
             >;
         };
 
         layer_num {
             bindings = <
-&kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3           &kp NUMBER_4     &kp NUMBER_5         &kp NUMBER_6    &kp N7        &kp N8        &kp N9        &kp NUMBER_0  &trans
-&trans     &trans        &kp AMPS      &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET     &kp MINUS       &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp COLON     &trans
-&trans     &trans        &kp PIPE      &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET    &kp STAR        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL     &trans
-                                       &trans                 &trans           &trans               &kp LEFT_SHIFT  &lt 3 GRAVE   &kp N0
+&kp GRAVE  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3           &kp NUMBER_4     &kp NUMBER_5         &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp NUMBER_0  &trans
+&trans     &kp EXCLAMATION  &kp AMPS      &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET     &kp MINUS     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp COLON     &trans
+&trans     &trans           &kp PIPE      &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET    &kp STAR      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL     &trans
+                                          &trans                 &trans           &trans               &trans        &lt 3 GRAVE   &kp N0
             >;
         };
 
