@@ -115,6 +115,11 @@
             bindings = <&windowRightHalf>;
             key-positions = <25 21>;
         };
+
+        arrow {
+            bindings = <&arrow>;
+            key-positions = <40 33>;
+        };
     };
 
     macros {
@@ -258,6 +263,14 @@
                 <&kp LEFT_ALT &kp LEFT_CONTROL &kp LEFT_GUI>;
 
             label = "WINDOWRIGHTMONITOR";
+        };
+
+        arrow: arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp EQUAL &kp RIGHT_ARROW>;
+
+            label = "ARROW";
         };
     };
 
