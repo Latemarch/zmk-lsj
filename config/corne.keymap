@@ -268,7 +268,7 @@
         arrow: arrow {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp EQUAL &kp RIGHT_ARROW>;
+            bindings = <&macro_tap>, <&kp EQUAL &kp GREATER_THAN>;
 
             label = "ARROW";
         };
