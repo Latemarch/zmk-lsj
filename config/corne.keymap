@@ -283,7 +283,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp C &kp O &kp N &kp S &kp O &kp L &kp DOT &kp L &kp O &kp G &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
+                <&kp C &kp O &kp N &kp S &kp O &kp L &kp E &kp DOT &kp L &kp O &kp G &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
 
             label = "CONSOLE";
         };
