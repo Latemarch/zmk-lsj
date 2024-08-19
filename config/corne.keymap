@@ -36,11 +36,6 @@
             key-positions = <33 32>;
         };
 
-        escape {
-            bindings = <&kp ESCAPE>;
-            key-positions = <13 14>;
-        };
-
         backtic {
             bindings = <&kp GRAVE>;
             key-positions = <7 8>;
