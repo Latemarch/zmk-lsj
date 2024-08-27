@@ -332,8 +332,8 @@
 
         layer_num {
             bindings = <
-&kp GRAVE         &kp NUMBER_1     &kp NUMBER_2          &kp NUMBER_3           &kp NUMBER_4     &kp NUMBER_5         &kp NUMBER_6    &kp N7     &kp N8    &kp N9     &kp NUMBER_0  &trans
-&kp LEFT_CONTROL  &kp EXCLAMATION  &kp AMPS              &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET     &kp MINUS       &kp PLUS   &kp STAR  &kp SLASH  &trans        &trans
+&kp LEFT_ALT      &kp NUMBER_1     &kp NUMBER_2          &kp NUMBER_3           &kp NUMBER_4     &kp NUMBER_5         &kp NUMBER_6    &kp N7     &kp N8    &kp N9     &kp NUMBER_0  &trans
+&kp LEFT_CONTROL  &kp GRAVE        &kp AMPS              &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET     &kp MINUS       &kp PLUS   &kp STAR  &kp SLASH  &trans        &trans
 &trans            &screenshotSave  &screenshotClipBoard  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET    &kp UNDERSCORE  &kp EQUAL  &trans    &trans     &trans        &trans
                                                          &trans                 &trans           &trans               &trans          &trans     &kp N0
             >;
