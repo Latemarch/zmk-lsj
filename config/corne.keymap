@@ -324,18 +324,18 @@
             //                    | GUI | RSE | ALT/ENT |   | BKSP | HYPER/SPC  | LWR |
 
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E               &kp R              &kp T        &kp Y                  &kp U             &kp I            &kp O    &kp P          &mt LEFT_ALT BACKSLASH
-&kp ESCAPE      &kp A  &kp S  &kp D               &kp F              &kp G        &kp H                  &kp J             &kp K            &kp L    &kp BACKSPACE  &kp ENTER
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C               &kp V              &kp B        &kp N                  &kp M             &kp COMMA        &kp DOT  &kp SLASH      &kp LEFT_CONTROL
-                              &mt LEFT_GUI EQUAL  &lt 1 EXCLAMATION  &kp SPACE    &mt RIGHT_SHIFT MINUS  &lt 2 UNDERSCORE  &lt 4 RIGHT_GUI
+&kp TAB         &kp Q  &kp W  &kp E               &kp R              &kp T        &kp Y                       &kp U        &kp I            &kp O    &kp P          &mt LEFT_ALT BACKSLASH
+&kp ESCAPE      &kp A  &kp S  &kp D               &kp F              &kp G        &kp H                       &kp J        &kp K            &kp L    &kp BACKSPACE  &kp ENTER
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C               &kp V              &kp B        &kp N                       &kp M        &kp COMMA        &kp DOT  &kp SLASH      &kp LEFT_CONTROL
+                              &mt LEFT_GUI EQUAL  &lt 1 EXCLAMATION  &kp SPACE    &mt RIGHT_SHIFT UNDERSCORE  &lt 2 MINUS  &lt 4 RIGHT_GUI
             >;
         };
 
         layer_num {
             bindings = <
 &kp PAGE_UP    &kp NUMBER_1     &kp NUMBER_2          &kp NUMBER_3           &kp NUMBER_4     &kp NUMBER_5         &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp NUMBER_0  &trans
-&kp PAGE_DOWN  &kp GRAVE        &kp AMPS              &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET     &kp MINUS     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans        &trans
-&trans         &screenshotSave  &screenshotClipBoard  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET    &kp PLUS      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans        &trans
+&kp PAGE_DOWN  &kp GRAVE        &kp AMPS              &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET     &kp PLUS      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans        &trans
+&trans         &screenshotSave  &screenshotClipBoard  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET    &kp STAR      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans        &trans
                                                       &trans                 &trans           &trans               &trans        &trans        &kp N0
             >;
         };
@@ -372,9 +372,9 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans          &trans          &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &mkp MB4  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans          &trans          &trans           &trans    &trans
                         &trans  &trans  &trans    &trans          &trans          &trans
             >;
         };
