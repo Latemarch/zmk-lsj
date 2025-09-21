@@ -92,26 +92,6 @@
             key-positions = <7 5>;
         };
 
-        window2-3 {
-            bindings = <&window23>;
-            key-positions = <25 3>;
-        };
-
-        window1-3 {
-            bindings = <&window13>;
-            key-positions = <25 15>;
-        };
-
-        windowLeftHalf {
-            bindings = <&windowLeftHalf>;
-            key-positions = <25 18>;
-        };
-
-        windowRightHalf {
-            bindings = <&windowRightHalf>;
-            key-positions = <25 21>;
-        };
-
         arrow {
             bindings = <&arrow>;
             key-positions = <40 33>;
@@ -311,6 +291,18 @@
 
             label = "SCREENSHOTSAVE";
         };
+
+        emoji: emoji {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_GUI &kp LEFT_CONTROL &kp SPACE>,
+                <&macro_release>,
+                <&kp LEFT_GUI &kp LEFT_CONTROL &kp SPACE>;
+
+            label = "EMOJI";
+        };
     };
 
     keymap {
@@ -333,8 +325,8 @@
 
         layer_num {
             bindings = <
-&kp PAGE_UP    &kp NUMBER_1     &kp NUMBER_2          &kp NUMBER_3           &kp NUMBER_4     &kp NUMBER_5         &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp NUMBER_0  &trans
-&kp PAGE_DOWN  &kp GRAVE        &kp AMPS              &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET     &kp PLUS      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans        &trans
+&kp GLOBE      &kp NUMBER_1     &kp NUMBER_2          &kp NUMBER_3           &kp NUMBER_4     &kp NUMBER_5         &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp NUMBER_0  &trans
+&kp PAGE_DOWN  &emoji           &kp AMPS              &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET     &kp PLUS      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans        &trans
 &trans         &screenshotSave  &screenshotClipBoard  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET    &kp STAR      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans        &trans
                                                       &trans                 &trans           &trans               &trans        &trans        &kp N0
             >;
