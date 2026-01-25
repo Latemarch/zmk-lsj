@@ -316,10 +316,10 @@
             //                    | GUI | RSE | ALT/ENT |   | BKSP | HYPER/SPC  | LWR |
 
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E               &kp R              &kp T        &kp Y                       &kp U        &kp I            &kp O    &kp P          &mt LEFT_ALT BACKSLASH
-&kp ESCAPE      &kp A  &kp S  &kp D               &kp F              &kp G        &kp H                       &kp J        &kp K            &kp L    &kp BACKSPACE  &kp ENTER
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C               &kp V              &kp B        &kp N                       &kp M        &kp COMMA        &kp DOT  &kp SLASH      &kp LEFT_CONTROL
-                              &mt LEFT_GUI EQUAL  &lt 1 EXCLAMATION  &kp SPACE    &mt RIGHT_SHIFT UNDERSCORE  &lt 2 MINUS  &lt 4 RIGHT_GUI
+&kp TAB         &kp Q  &kp W  &kp E               &kp R              &kp T        &kp Y                       &kp U        &kp I      &kp O    &kp P          &mt LEFT_ALT BACKSLASH
+&kp ESCAPE      &kp A  &kp S  &kp D               &kp F              &kp G        &kp H                       &kp J        &kp K      &kp L    &kp BACKSPACE  &kp ENTER
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C               &kp V              &kp B        &kp N                       &kp M        &kp COMMA  &kp DOT  &kp SLASH      &kp LEFT_CONTROL
+                              &mt LEFT_GUI EQUAL  &lt 1 EXCLAMATION  &kp SPACE    &mt RIGHT_SHIFT UNDERSCORE  &lt 2 MINUS  &lt 4 B
             >;
         };
 
