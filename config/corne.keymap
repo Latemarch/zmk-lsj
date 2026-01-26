@@ -109,9 +109,9 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_COMMAND &kp LEFT_ALT &kp I>,
+                <&kp LEFT_COMMAND &kp LEFT_ALT &kp J>,
                 <&macro_release>,
-                <&kp LEFT_COMMAND &kp LEFT_ALT &kp I>;
+                <&kp LEFT_COMMAND &kp LEFT_ALT &kp J>;
 
             label = "DEV_TOOL";
         };
@@ -303,6 +303,34 @@
 
             label = "EMOJI";
         };
+
+        lefthalf: lefthalf {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp GLOBE &kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp LEFT_ARROW>,
+                <&macro_release>,
+                <&kp GLOBE &kp LEFT_CONTROL>;
+
+            label = "LEFTHALF";
+        };
+
+        righthalf: righthalf {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp GLOBE &kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp RIGHT>,
+                <&macro_release>,
+                <&kp GLOBE &kp LEFT_CONTROL>;
+
+            label = "RIGHTHALF";
+        };
     };
 
     keymap {
@@ -325,10 +353,10 @@
 
         layer_num {
             bindings = <
-&kp GRAVE      &kp NUMBER_1     &kp NUMBER_2          &kp NUMBER_3           &kp NUMBER_4     &kp NUMBER_5         &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp NUMBER_0  &trans
-&kp PAGE_DOWN  &emoji           &kp AMPS              &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET     &kp PLUS      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans        &trans
-&trans         &screenshotSave  &screenshotClipBoard  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET    &kp STAR      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans        &trans
-                                                      &trans                 &trans           &trans               &trans        &trans        &kp N0
+&kp GRAVE          &kp NUMBER_1        &kp NUMBER_2         &kp NUMBER_3           &kp NUMBER_4     &kp NUMBER_5         &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp NUMBER_0  &trans
+&kp SINGLE_QUOTE   &lefthalf           &righthalf           &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET     &kp PLUS      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans        &trans
+&kp DOUBLE_QUOTES  &windowLeftMonitor  &windowRightMonitor  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET    &kp STAR      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans        &trans
+                                                            &trans                 &trans           &trans               &trans        &trans        &kp N0
             >;
         };
 
@@ -340,10 +368,19 @@
             //                     | GUI |     | ALT/ENT |   | BKSP | HYPER/SPACE |    |
 
             bindings = <
-&kp F12             &kp F1           &kp F2        &kp F3        &kp F4            &kp F5                 &kp F6          &kp F7            &kp F8        &kp F9           &kp F10          &kp F11
-&windowLeftMonitor  &windowLeftHalf  &window23     &window13     &windowRightHalf  &windowRightMonitor    &kp LEFT_ARROW  &kp DOWN_ARROW    &kp UP_ARROW  &kp RIGHT_ARROW  &rgb_ug RGB_EFF  &rgb_ug RGB_COLOR_HSB(225,100,80)
-&bt BT_CLR          &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_SEL 4           &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT    &kp C_VOL_DN     &kp C_VOLUME_UP  &rgb_ug RGB_TOG
-                                                   &trans        &trans            &trans                 &trans          &trans            &trans
+&kp F12     &kp F1           &kp F2        &kp F3        &kp F4            &kp F5          &kp F6          &kp F7            &kp F8        &kp F9           &kp F10          &kp F11
+&trans      &windowLeftHalf  &window23     &window13     &windowRightHalf  &trans          &kp LEFT_ARROW  &kp DOWN_ARROW    &kp UP_ARROW  &kp RIGHT_ARROW  &kp DEL          &screenshotSave
+&bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_SEL 4    &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT    &kp C_VOL_DN     &kp C_VOLUME_UP  &screenshotClipBoard
+                                           &trans        &trans            &trans          &trans          &trans            &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &mkp MB4  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans          &trans          &trans           &trans    &trans
+                        &trans  &trans  &trans    &trans          &trans          &trans
             >;
         };
 
@@ -359,15 +396,6 @@
 &kp TAB     &kp LEFT      &kp DOWN      &kp RIGHT        &trans          &sys_reset           &kp C_PREV         &kp C_NEXT       &kp C_PP          &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                   &kp PAGE_DOWN
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3    &bt BT_SEL 4         &rgb_ug RGB_TOG    &rgb_ug RGB_EFF  &rgb_ug RGB_BRI   &rgb_ug RGB_BRD    &rgb_ug RGB_COLOR_HSB(241,88,46)  &kp C_MUTE
                                         &kp LWIN         &trans          &ext_power EP_TOG    &ext_power EP_OFF  &trans           &ext_power EP_ON
-            >;
-        };
-
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &mkp MB4  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans          &trans          &trans           &trans    &trans
-                        &trans  &trans  &trans    &trans          &trans          &trans
             >;
         };
     };
