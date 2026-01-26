@@ -309,11 +309,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp GLOBE &kp LEFT_CONTROL>,
+                <&kp LEFT_GUI &kp LEFT_CONTROL>,
                 <&macro_tap>,
                 <&kp LEFT_ARROW>,
                 <&macro_release>,
-                <&kp GLOBE &kp LEFT_CONTROL>;
+                <&kp LEFT_GUI &kp LEFT_CONTROL>;
 
             label = "LEFTHALF";
         };
@@ -323,11 +323,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp GLOBE &kp LEFT_CONTROL>,
+                <&kp LEFT_GUI &kp LEFT_CONTROL>,
                 <&macro_tap>,
                 <&kp RIGHT>,
                 <&macro_release>,
-                <&kp GLOBE &kp LEFT_CONTROL>;
+                <&kp LEFT_GUI &kp LEFT_CONTROL>;
 
             label = "RIGHTHALF";
         };
@@ -353,10 +353,10 @@
 
         layer_num {
             bindings = <
-&kp GRAVE          &kp NUMBER_1        &kp NUMBER_2         &kp NUMBER_3           &kp NUMBER_4     &kp NUMBER_5         &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp NUMBER_0  &trans
-&kp SINGLE_QUOTE   &lefthalf           &righthalf           &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET     &kp PLUS      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans        &trans
-&kp DOUBLE_QUOTES  &windowLeftMonitor  &windowRightMonitor  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET    &kp STAR      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans        &trans
-                                                            &trans                 &trans           &trans               &trans        &trans        &kp N0
+&kp GRAVE          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3           &kp NUMBER_4     &kp NUMBER_5         &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp NUMBER_0  &trans
+&kp SINGLE_QUOTE   &leftWindow   &rightWindow  &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET     &kp PLUS      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans        &trans
+&kp DOUBLE_QUOTES  &lefthalf     &righthalf    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET    &kp STAR      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans        &trans
+                                               &trans                 &trans           &trans               &trans        &trans        &kp N0
             >;
         };
 
