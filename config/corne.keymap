@@ -336,6 +336,15 @@
     keymap {
         compatible = "zmk,keymap";
 
+        layer_5 {
+            bindings = <
+&kp TAB    &kp F1  &kp F2   &kp F3    &kp F4    &kp A    &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESC    &kp F5  &kp F6   &kp F7    &kp F8    &kp S    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LCTRL  &kp F9  &kp F10  &kp F11   &kp F12   &kp D    &trans  &trans  &trans  &trans  &trans  &trans
+                            &kp LGUI  &kp LALT  &kp M    &trans  &trans  &trans
+            >;
+        };
+
         default_layer {
             // -----------------------------------------------------------------------------------------
             // | TAB  |  Q  |  W  |  E  |  R  |    T    |   |  Y  |  U   |  I  |  O  |  P  | ESC |
@@ -347,7 +356,7 @@
 &kp TAB         &kp Q  &kp W  &kp E               &kp R              &kp T        &kp Y                       &kp U        &kp I          &kp O    &kp P          &mt LEFT_ALT BACKSLASH
 &kp ESCAPE      &kp A  &kp S  &kp D               &kp F              &kp G        &kp H                       &kp J        &kp K          &kp L    &kp BACKSPACE  &kp ENTER
 &kp LEFT_SHIFT  &kp Z  &kp X  &kp C               &kp V              &kp B        &kp N                       &kp M        &kp COMMA      &kp DOT  &kp SLASH      &kp LEFT_CONTROL
-                              &mt LEFT_GUI EQUAL  &lt 1 EXCLAMATION  &kp SPACE    &mt RIGHT_SHIFT UNDERSCORE  &lt 2 MINUS  &kp RIGHT_GUI
+                              &mt LEFT_GUI EQUAL  &lt 2 EXCLAMATION  &kp SPACE    &mt RIGHT_SHIFT UNDERSCORE  &lt 3 MINUS  &kp RIGHT_GUI
             >;
         };
 
