@@ -338,10 +338,10 @@
 
         layer_5 {
             bindings = <
-&kp TAB    &kp F1  &kp F2   &kp F3    &kp F4    &kp A    &trans  &trans  &trans  &trans  &trans  &trans
-&kp ESC    &kp F5  &kp F6   &kp F7    &kp F8    &kp S    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LCTRL  &kp F9  &kp F10  &kp F11   &kp F12   &kp D    &trans  &trans  &trans  &trans  &trans  &trans
-                            &kp LGUI  &kp LALT  &kp M    &trans  &trans  &trans
+&kp TAB    &kp F1  &kp F2   &kp F3    &kp F4    &kp A    &trans  &trans   &trans  &trans  &trans  &trans
+&kp ESC    &kp F5  &kp F6   &kp F7    &kp F8    &kp S    &trans  &trans   &trans  &trans  &trans  &trans
+&kp LCTRL  &kp F9  &kp F10  &kp F11   &kp F12   &kp D    &trans  &trans   &trans  &trans  &trans  &trans
+                            &kp LGUI  &kp LALT  &kp M    &trans  &lt 2 A  &trans
             >;
         };
 
